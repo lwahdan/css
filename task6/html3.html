@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main > div{
+            border: 1px solid black;
+        }
+        .child1{grid-area: header;}
+        .child2{grid-area: sidebar;}
+        .child3{grid-area: nav;}
+        .child4{grid-area: artical;}
+        .child5{grid-area: footer;}
+
+        .main{
+            display: grid;
+            grid-template-areas: 'header header header'
+                                 'sidebar nav nav'
+                                 'sidebar artical artical'
+                                 'sidebar artical artical'
+                                 'footer footer footer'
+            ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child1">header</div>
+        <div class="child2">sidebar</div>
+        <div class="child3">nav</div>
+        <div class="child4">artical</div>
+        <div class="child5">footer</div>
+    </div>
+</body>
+</html>

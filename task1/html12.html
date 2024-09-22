@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #dia {
+            position: relative;
+            width: 100vw;
+            height: 80px;
+            overflow: hidden;
+        }
+        
+        #dia::before, #dia::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1; 
+        }
+        
+        #dia::before {
+            background: #1f1f7a; 
+            clip-path: polygon(0 100%, 0 0, 100% 100%);
+        }
+        
+        #dia::after {
+            background: #d4ff00; 
+            clip-path: polygon(100% 0, 100% 100%, 0 0);
+        }
+
+        #dia p {
+            position: relative;
+            z-index: 2; 
+            margin: 0;
+            padding: 10px; 
+        }
+        #text{
+            text-align: center;
+            margin-top: 150px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Four-color background (split diagonally):</h2>
+    <div id="text">
+        <p>This div has four colors</p>
+    </div>
+
+    <div id="dia">
+        <!-- <p>This div has four colors</p> -->
+    </div>
+
+</body>
+</html>

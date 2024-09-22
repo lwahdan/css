@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: 65px;
+            border: 1px solid black;
+            
+        }
+        #visible{
+            background-color: aqua;
+            overflow: visible;
+
+        }
+
+        #hidden{
+            background-color:aquamarine;
+            overflow: hidden;
+
+        }
+
+        #scroll{
+            background-color:antiquewhite;
+            overflow: scroll;
+
+        }
+
+        #auto{
+            background-color:blanchedalmond;
+            overflow: auto;
+
+        }
+
+        #over{
+            background-color: lightcoral;
+            overflow-x: hidden;
+            overflow-y: scroll; 
+        }
+    </style>
+</head>
+<body>
+    <h2>visible</h2>
+    <div id="visible">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus repudiandae iure eum maxime explicabo quidem fugiat. Iusto, nostrum ipsam nemo quos officia sapiente repellendus, consequuntur distinctio minus explicabo eos?</p>
+    </div>
+
+    <h2>hidden</h2>
+
+    <div id="hidden">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus repudiandae iure eum maxime explicabo quidem fugiat. Iusto, nostrum ipsam nemo quos officia sapiente repellendus, consequuntur distinctio minus explicabo eos?</p>
+    </div>
+    <h2>scroll</h2>
+
+    <div id="scroll">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima error architecto vitae? Libero hic, perspiciatis consequuntur labore enim at quas cumque dolor ab veritatis expedita, blanditiis distinctio maiores, modi voluptate? Provident voluptatibus repudiandae iure eum maxime explicabo quidem fugiat. Iusto, nostrum ipsam nemo quos officia sapiente repellendus, consequuntur distinctio minus explicabo eos?</p>
+    </div>
+    <h2>auto</h2>
+
+    <div id="auto">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus repudiandae iure eum maxime explicabo quidem fugiat. Iusto, nostrum ipsam nemo quos officia sapiente repellendus, consequuntur distinctio minus explicabo eos?</p>
+    </div>
+    <h2>overflow-x overflow-y</h2>
+
+    <div id="over">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus repudiandae iure eum maxime explicabo quidem fugiat. Iusto, nostrum ipsam nemo quos officia sapiente repellendus, consequuntur distinctio minus explicabo eos?</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,th,td{
+        border: 1px solid black;
+    }
+
+    #reg{
+        color: red;
+        background-color: lightgoldenrodyellow;
+    }
+
+    td{
+        background-color: lightskyblue;
+    }
+    .btn{
+        width: 100px;
+        height: 30px;
+    }
+
+    #bton{
+        text-align: center;
+    }
+</style>
+<body>
+   <table>
+    <form>
+        <tr>
+            <th colspan="2" id="reg">Regestration Form</th>
+        </tr>
+        
+        <tr>
+            <td><lable>Enter Name</lable></td>
+            <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+            <td><lable>Password Name</lable></td>
+            <td><input type="password" id="pass" name="pass"></td>
+        </tr>
+        <tr>
+            <td><lable>Enter Address</lable></td>
+            <td><textarea></textarea></td>
+        </tr>
+        <tr>
+            <td>Select Game</td>
+            <td>
+                <input type="checkbox" id="hockey" name="hockey" value="hockey">
+                <lable for="hockey">hockey</lable><br>
+                <input type="checkbox" id="football" name="football" value="football">
+                <lable for="football">football</lable><br>
+                <input type="checkbox" id="bad" name="bad" value="bad">
+                <lable for="bad">badminton</lable><br>
+                <input type="checkbox" id="cricket" name="cricket" value="cricket">
+                <lable for="cricket">cricket</lable><br>
+                <input type="checkbox" id="vollyball" name="vollyball" value="vollyball">
+                <lable for="vollyball">vollyball</lable>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <lable for="male">  Male</lable>
+                <input type="radio" id="female" name="gender" value="female">
+                <lable for="female"> female</lable>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="age">Select ur Age</label></td>
+            <td><select id="age" name="age">
+                <option value="under 18">under 18</option>
+                <option value="18-25">18-25</option>
+                <option value="above 25">above 25</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td><label>Select photo</label></td>
+            <td><input type="file" id="img" name="img"></td>
+        </tr>
+
+        <tr id="bton">
+            <td colspan="2">
+                <button class="btn">Click me</button>
+                <input type="submit" value="submit" class="btn" >
+                <input type="reset" value="reset" class="btn" >
+            </td>
+        </tr>
+    
+    </form>
+   </table>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #online{
+            color: red;
+            text-align: center;
+        }
+
+        #header{
+            color: white;
+            background-color: gray;
+            border: 1px solid black;
+            height: 100px;
+            
+        }
+
+        #header img{
+            height: 50px;
+            width: 50px;
+            margin-left: 600px;
+
+        }
+
+        #header ul{
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            width: 600px;
+            margin: 20px 330px;
+        }
+
+        #pics{
+
+            background-image: url("/2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 500px;
+            border: 1px solid black;
+
+        }
+
+        #welcome{
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        #welcome button{
+            margin-top: 30px;
+            background-color: yellow;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 50px;
+        }
+
+        #pic{
+            width: 600px;
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 350px;
+
+        }
+
+        #pic img{
+            border: 2px solid black;
+            border-radius: 50px;
+            box-shadow: 20px 20px 10px ;
+
+        }
+
+        #menu{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin-left: 100px;
+            margin-top: 40px;
+        }
+
+        #menu img{
+            border: 1px solid black;
+            border-radius: 20px;
+            width: 230px;
+            height: 220px;
+        }
+
+        #btn button{
+            background-color: yellow;
+            border: 1px solid black;
+            border-radius: 50px;
+            height: 20px;
+            width: 100px;
+            font-size: 12px;
+            justify-content: space-between;
+         }
+
+         #btn{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin: 0;
+         }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div id="online">
+            <h1>Online</h1>
+            <p style="color: black;">FoodShop</p>
+            <hr>
+        </div>
+
+        <div id="header">
+            <img src="/1.png">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Menue</li>
+                <li>ContactUs</li>
+            </ul>
+        </div>
+
+        <div id="pics">
+
+            <div id="welcome">
+                <h1>Welcome to Online FoodShop</h1>
+                <button>ORDER NOW</button>
+            </div>
+
+            <div id="pic">
+                <img src="/3.jpg">
+                <img src="/4.jpg">
+
+            </div>
+        </div>
+        <hr>
+
+        <h2 style="color: red; text-align: center;">Featured Products</h2>
+
+        <div id="menu">
+
+            <img src="/5.jpg"> 
+            <img src="/6.jpg"> 
+            <img src="/7.jpg"> 
+            <div id="btn">
+                <button>ORDER NOW</button>
+                <button>ORDER NOW</button>
+                <button>ORDER NOW</button>
+             </div>
+        </div>
+        
+    </div>
+</body>
+</html>

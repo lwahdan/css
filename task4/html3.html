@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+        }
+        #div1{
+            background-color: lightblue;
+            position: relative;
+        }
+        #div2{
+            background-color: lightcoral;
+            position: absolute;
+            margin-top: 400px;
+        }
+        #div3{
+            background-color: lightgreen;
+            position: absolute;
+            margin-top:-120px ;
+        }
+        #div4{
+            background-color: lightsalmon;
+            position: absolute;
+            margin-left: 1150px;
+            margin-bottom: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">absolute</div>
+    <div id="div2">absolute</div>
+    <div id="div4">absolute
+        <div id="div3">absolute</div>
+
+    </div>
+</body>
+</html>
